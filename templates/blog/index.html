@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="py-4">
+    {% for post in posts %}
+        {% include 'partials/_post-card.html' %}
+    {% endfor %}
+
+</div>
+
+
+{% endblock content %}

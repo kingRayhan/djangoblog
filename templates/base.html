@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blog Home - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+      padding: 56px 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  {% include 'partials/_navbar.html' %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+          {% block content %}
+          {% endblock content %}
+      </div>
+      {% include 'partials/_sidebar.html' %}
+    </div>
+  </div>
+
+  {% include 'partials/_footer.html' %}
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
